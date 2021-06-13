@@ -9,9 +9,13 @@
    <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
   	<!-- <a-marker preset="hiro"> -->
+     <a-assets>
+            <a-asset-item id="tree-model" src="https://raw.githubusercontent.com/TimVanMourik/ChristmasAR/master/data/Tree.dae" crossOrigin="anonymous"></a-asset-item>
+            <a-asset-item id="text-model" src="https://raw.githubusercontent.com/TimVanMourik/ChristmasAR/master/data/MerryChristmas.dae" crossOrigin="anonymous"></a-asset-item>
+       </a-assets>
   	<a-marker-camera preset='custom' url='public/pattern/pattern-Kitil.patt'>
 
-            <a-entity gltf-model='public/object/Kitil.gltf'></a-entity>
+            <a-entity collada-model="#tree-model"></a-entity>
   	<!-- </a-marker> -->
   	</a-marker-camera>
   	<a-entity camera></a-entity>

@@ -1,1 +1,2 @@
 kitil1.gltf filter=lfs diff=lfs merge=lfs -text
+Kitil.gltf filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,1002 @@
+
+  .pics {
+    width: 250px;
+    margin: 30px;
+    float: right;
+  }
+
+  .col-md-12{
+    border: solid 1px #bebebe;
+    box-shadow: 1px 2px 15px #bebebe;
+  }
+ 
+  #service-features {
+    display: flex;
+    flex-direction: row;
+    /* Change flow-direction to "column" in the responsive design for the features to stack
+    one on top of another. */
+    justify-content: space-around;
+    margin-top: 2%;
+    padding-bottom: 3%;
+  }
+  
+  #features-description {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 2%;
+    padding: 1%;
+    display: flex;
+    width: 60%;
+  }
+  
+  #features-description h1 {
+    font-size: 45px;
+  }
+  
+  #features-description p {
+    padding: 1%;
+    margin-top: 1%;
+  }
+  
+  #feature {
+    width: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #bebebe;
+    box-shadow: 1px 2px 15px #bebebe;
+  }
+  
+  #feature img {
+    max-width: 30%;
+    max-height: 30%;
+    padding-top: 5%;
+  }
+  
+  #feature-title {
+    margin-top: 5%;
+  }
+  
+  #feature p {
+    width: 70%;
+    margin-top: 5%;
+  }
+  
+  #feature-button {
+    border: none;
+    margin-top: 30%;
+    width: 12vh;
+    height: 5vh;
+    border-radius: 15px;
+    background-color: #ff5a6e;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 20%;
+  }
+  
+  #feature-button:hover {
+    background-color: #ff7b8b;
+    cursor: pointer;
+  }
+  
+
+  /* ========================
+  Google Map
+  ======================== */
+  #map {
+    width: 90vh;
+    height: 75vh;
+    margin: auto;
+    background-color: rgba(216,216,216,1);
+    padding: 1.2em;
+  }
+  
+  /* ========================
+  Raddy
+  ======================== */
+
+
+.wrapper {
+  
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 10px;
+}
+
+header, footer {
+  background-color: ghostwhite;
+  padding: 20px;
+}
+
+main {
+  background-color: cornsilk;
+  padding: 20px;
+}
+
+.layout-sidebar {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 2fr 1fr;
+}
+
+  /* ========================
+  Mr Roboto
+  ======================== */
+  /* https://coolors.co/2c3e50-e74c3c-ffffff-3498db-95a3b3 */
+
+/* ========================
+Utilities
+======================== */
+
+* {
+  box-sizing: border-box;
+}
+
+.cf::before,
+.cf::after {
+    content: "";
+    display: table; 
+}
+
+.cf::after {
+    clear: both;
+}
+
+html {
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ========================
+Global
+======================== */
+
+body {
+  font-family: "Noto Sans";
+  background-color: #bebebe;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, ul, ol, p {
+  margin-top: 0;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a, a:hover, a:focus, a:active, a:visited {
+  color: #E74C3C;
+  text-decoration: underline;
+}
+
+/* ========================
+Containers
+======================== */
+
+.container-fluid {
+  padding: 0 1em;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 996px;
+}
+
+/* ========================
+Navigation
+======================== */
+
+@keyframes show-header {
+    0% {
+        top: -4em;
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+nav {
+  background-color: #ffd000;
+  box-shadow: 0 2px 2px rgba(0,0,0,.45);
+  position: relative;
+  top: 0;
+}
+
+nav a, nav a:hover, nav a:focus,  nav a:active, nav a:visited {
+  text-decoration: none;
+}
+
+nav .brand {
+  
+  float: left;
+  font-size: 1.25em;
+  font-weight: 900;
+}
+
+nav .brand a {
+  color: #444;
+  display: block;
+  padding: 1em 0;
+}
+
+nav .nav-toggle {
+  color: #444;
+  cursor: pointer;
+  
+  float: right;
+  font-size: 1.25em;
+  padding: 1em 0;
+  z-index: 1000
+}
+
+nav ul {
+  border-top: 1px solid #ccc;
+  clear: both;
+  list-style: none;
+  margin: 0 -1em;
+  padding: 0;
+  z-index: 999;
+}
+
+nav ul li {
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+nav ul li a {
+  color: #444;
+  display: block;
+  padding: .75em;
+}
+
+nav.sticky {
+  animation: show-header .5s ease;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* ========================
+Media Queries
+======================== */
+
+@media (min-width: 768px) {
+  
+  nav .nav-toggle {
+    display: none;
+  }
+  
+  nav ul {
+    border: none;
+    clear: none;
+   
+    float: right;
+    margin: 0;
+    padding: 25px 0;
+  }
+  
+  nav ul li {
+    border: none;
+   
+    float: left;
+    margin-right: 1.5em;
+  }
+  
+  nav ul li:last-of-type {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    padding: 0;
+  }
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#red-text {
+    color: #ff5a6e;
+}
+
+#title-text-separator {
+  width: 5%;
+  margin-top: 1%;
+  border: solid 1px #ff5a6e;
+}
+
+.responsive-menu-link {
+  color: black;
+}
+
+
+/* ----- General Header CSS ------ */
+
+#header {
+  position: fixed;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  font-size: 19px;
+  min-height: 100px;
+}
+
+/* Normal Header */
+
+.active-header {
+  background-color: white;
+  color: black;
+}
+
+.menu-link {
+  color: white;
+}
+
+.active-menu-links {
+  color: black;
+}
+
+#normal-header {
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  font-size: 19px;
+  min-height: 100px;
+}
+
+#header-img {
+  width: 250px;
+  margin-left: 15%;
+}
+
+#nav-bar ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row;
+}
+
+#nav-bar li {
+  padding: 10px;
+  margin: 12px;
+}
+
+#nav-bar ul, a {
+  text-decoration: none;
+}
+
+/* ----- Main Content CSS -----
+
+Tags included:
+
+1. features-container - the main container wrapping the "features" elements
+
+2. features-description - container wrapping the title and the description
+
+3. features-title - the main title of the Features
+
+4. features-separator - the line that separates the title from the Description
+
+5. features-text - the main describing the features and services
+
+6. service-features - container wrapping all 4 services
+
+7. feature - the common id applied to the container of all the 4 services
+
+8. feature img - the styling of each image belonging to each feature
+
+9. feature-title - the common id applied to the title of each feature
+
+10. feature p - the styling of each paragraph belonging to each feature
+
+11. feature-button - the common id applied to the button of each feature
+
+12. feature-button:hover - the ":hover" styling of each button
+
+*/
+#features-container{
+  box-shadow: 2px 2px 15px #bebebe;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+#service-features {
+  display: flex;
+  flex-direction: row;
+  /* Change flow-direction to "column" in the responsive design for the features to stack
+  one on top of another. */
+  justify-content: space-around;
+  margin-top: 2%;
+  padding-bottom: 3%;
+}
+
+#features-description {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 2%;
+  padding: 1%;
+  display: flex;
+  width: 60%;
+}
+
+#features-description h1 {
+  font-size: 45px;
+}
+
+#features-description p {
+  padding: 1%;
+  margin-top: 1%;
+}
+
+#feature {
+  width: 90%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #bebebe;
+  box-shadow: 1px 2px 15px #bebebe;
+  background-color: #fff;
+}
+
+#feature img {
+  max-width: 50%;
+  max-height: 50%;
+  padding-top: 5%;
+}
+
+#feature-title {
+  margin-top: 5%;
+}
+
+#feature p {
+  width: 70%;
+  margin-top: 5%;
+}
+
+#feature-button {
+  border: none;
+  margin-top: 30%;
+  width: 12vh;
+  height: 5vh;
+  border-radius: 15px;
+  background-color: #ff5a6e;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 20%;
+}
+
+#feature-button:hover {
+  background-color: #ff7b8b;
+  cursor: pointer;
+}
+
+/* Footer Section */
+
+footer {
+  box-shadow: 1px 2px 15px #bebebe;
+  margin-top: 4%;
+  color: #858585;
+  text-align: center;
+}
+
+footer p {
+  padding: 0.5%;
+}
+
+/* @Media min-width: 480px */
+@media only screen and (min-width : 200px) and (max-width : 860px) {
+
+  /* General Elements */
+
+  #title-text-separator {
+    width: 15%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border: solid 1px #ff5a6e;
+  }
+
+
+  /* Navigation CSS */
+  #header {
+    background: white;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 80px;
+    margin: auto;
+  }
+
+
+  #normal-header {
+    display: none;
+  }
+
+  #responsive-header {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    margin: auto;
+  }
+
+  #responsive-logo-button {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 0 1% 0;
+  }
+
+  #responsive-nav-bar {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  #responsive-nav-bar ul {
+    list-style: none;
+  }
+
+  #responsive-nav-bar li {
+    text-align: center;
+    font-size: 23px;
+    margin-top: 40%;
+  }
+
+  #responsive-first-item {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  #header-img-black {
+    margin-left: 5%;
+    margin-top: 3%;
+    width: 50%;
+    height: auto;
+  }
+
+  #dropdown-button-black {
+    display: block;
+    width: 55%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  #image-button-black {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+    padding: 2%;
+  }
+
+
+
+  /* Service Features CSS */
+
+  #service-features {
+    display: flex;
+    flex-direction: column;
+    /* Change flow-direction to "column" in the responsive design for the features to stack
+    one on top of another. */
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2%;
+  }
+
+  #features-description {
+    width: 90%;
+  }
+
+  #feature {
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #bebebe;
+    box-shadow: 1px 2px 15px #bebebe;
+    margin-top: 10%;
+  }
+
+  #feature-button {
+    border: none;
+    margin-top: 30%;
+    width: 15vh;
+    height: 5vh;
+    border-radius: 15px;
+    background-color: #ff5a6e;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 20%;
+  }
+
+  /* Footer Section */
+
+  footer {
+    margin-top: 10%;
+  }
+
+}
+
+@media only screen and (min-width : 860px) and (max-width : 1280px) {
+
+
+    /* Navigation CSS */
+    #header {
+      background: white;
+      position: fixed;
+      display: flex;
+      flex-wrap: wrap;
+      flex-flow: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      min-height: 80px;
+      margin: auto;
+    }
+
+
+    #normal-header {
+      display: none;
+    }
+
+    #responsive-header {
+      display: flex;
+      flex-flow: column;
+      width: 100%;
+      margin: auto;
+    }
+
+    #responsive-logo-button {
+      display: flex;
+      justify-content: space-between;
+      padding: 1% 0 1% 0;
+    }
+
+    #responsive-nav-bar {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+    }
+
+    #responsive-nav-bar ul {
+      list-style: none;
+    }
+
+    #responsive-nav-bar li {
+      text-align: center;
+      font-size: 23px;
+      margin-top: 40%;
+    }
+
+    #responsive-first-item {
+      margin-top: 0;
+      padding: 0;
+    }
+
+    #header-img-black {
+      margin-left: 5%;
+      margin-top: 3%;
+      width: 50%;
+      height: auto;
+    }
+
+    #dropdown-button-black {
+      display: block;
+      width: 55%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    #image-button-black {
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: inherit;
+      padding: 2%;
+    }
+
+
+  /* Hero CSS */
+
+  #hero-header {
+    width: auto;
+    height: 120vh;
+
+    /* hero-header flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    /* Texy style */
+    text-align: center;
+    color: white;
+
+    /* Background image */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(https://i.ibb.co/VTdML0x/accessories-apple-business-1038628.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  #hero-title {
+    font-size: 3.5em;
+  }
+
+  #hero-text {
+    font-size: 1.3em;
+    margin-top: 2%;
+  }
+
+  #hero-button {
+    border: solid 2px white;
+    background-color: inherit;
+    color: white;
+    margin-top: 6%;
+    width: 25%;
+    height: 55px;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+
+  #hero-button:hover {
+    cursor: pointer;
+  }
+
+
+
+  /* Service Features CSS */
+
+  #service-features {
+    display: flex;
+    flex-flow: row;
+    /* Change flow-direction to "column" in the responsive design for the features to stack
+    one on top of another. */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 2%;
+  }
+
+  #features-description {
+    width: 90%;
+  }
+
+  #feature {
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #bebebe;
+    box-shadow: 1px 2px 15px #bebebe;
+    margin-top: 10%;
+  }
+
+  #feature-button {
+    border: none;
+    margin-top: 30%;
+    width: 15vh;
+    height: 5vh;
+    border-radius: 15px;
+    background-color: #ff5a6e;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 20%;
+  }
+
+
+
+
+  /* Presentation Section CSS */
+
+  #presentation-container {
+    margin-top: 5%;
+    width: 80%;
+    margin: auto;
+  }
+
+  #presentation-title-description {
+    width: 90%;
+  }
+
+  #section-buttons {
+    margin-top: 5%;
+  }
+
+  #section-content-container {
+    margin: auto;
+    width: 90%;
+  }
+
+  #section-content-container {
+    margin-top: 7%;
+  }
+
+  .product-button {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 40%;
+    padding: 15px;
+  }
+
+  .product-content {
+    display: flex;
+    flex-flow: column;
+    padding: 2%;
+  }
+
+  #content-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  #content-image-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #content-title-text {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin: auto;
+    margin-top: 5%;
+  }
+
+  #content-title-text h1 {
+    margin: auto;
+  }
+
+  #centered-product-description {
+    text-align: center;
+  }
+
+  #content-title-text p {
+    margin-top: 5%;
+  }
+
+  #product-feature-image {
+    justify-content: center;
+    align-items: center;
+    width: 8%;
+  }
+
+  .product-features-list {
+    margin-top: 15%;
+  }
+
+  #first-feature-list {
+    margin-top: 10%;
+  }
+
+  #content-button {
+    margin: auto;
+    margin-top: 10%;
+    width: 35%;
+  }
+
+
+
+
+  /* -- Media Section CSS -- */
+
+  #main-media-container {
+    margin-top: 5%;
+  }
+
+  #media-title-description {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    margin-top: 8%;
+  }
+
+  #media-video-text-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 2% 1% 2% 1%;
+    margin-top: 10%;
+    text-align: center;
+  }
+
+  #media-text {
+    width: 100%;
+  }
+
+  #media-text h2 {
+    margin: auto;
+  }
+
+  #media-text p {
+    margin-top: 6%;
+  }
+
+  #text-video-sperator {
+    height: 1%;
+    width: 80%;
+    margin-top: 10%;
+    margin-bottom: 9%;
+  }
+
+  #media-button {
+    width: 35%;
+    margin: auto;
+    margin-top: 7%;
+  }
+
+  #media-video {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  #iframe-video {
+    width: 80vh;
+    height: 50vh;
+    margin-bottom: 9%;
+  }
+
+}

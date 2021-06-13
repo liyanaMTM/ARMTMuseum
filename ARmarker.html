@@ -1,24 +1,39 @@
-<!DOCTYPE html>
+<!doc html>
 <html>
     <head>
         <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    </head>
-    <script src="arjs/aframe/build/aframe.min.js"></script>
-    <script src="arjs/arjs/build/aframe-ar.js"></script>
-    
-   <body style='margin : 0px; overflow: hidden;'>
-    <a-scene embedded arjs>
-  	<!-- <a-marker preset="hiro"> -->
-     <a-assets>
-            <a-asset-item id="kitil" src="https://github.com/liyanaMTM/ARMTMuseum/blob/main/public/object/Kitil.gltf"></a-asset-item>
-       </a-assets>
-  	<a-marker-camera preset='custom' url='public/pattern/pattern-Kitil.patt'>
 
-            <a-entity gltf-model="#kitil"></a-entity>
-  	<!-- </a-marker> -->
-  	</a-marker-camera>
-  	<a-entity camera></a-entity>
+        <script src="arjs/aframe/build/aframe.min.js"></script>
+        <script src="arjs/arjs/build/aframe-ar.js"></script>
+    </head>
+    
+    <body style='margin : 0px; overflow: hidden;'>
+
+    <a-scene embedded arjs>
+
+        <!-- to put url marker -->
+        <a-marker-camera preset='custom' url='public/pattern/pattern-Kitil.patt'>
+
+            <!-- to put url object -->
+            <a-assets>
+
+                <a-asset-item id="kitil" src="https://github.com/liyanaMTM/ARMTMuseum/blob/main/public/object/Kitil.gltf"></a-asset-item>
+
+            </a-assets>
+
+            <!-- to tagged the model -->
+            <a-entity 
+                gltf-model=”url(/public/object/Kitil.gltf)”>
+            </a-entity>
+
+        </a-marker-camera>
+
+        <!-- camera -->
+        <a-entity camera></a-entity>
+
     </a-scene>
-  </body>
+
+    </body>
+    
 </html>
 

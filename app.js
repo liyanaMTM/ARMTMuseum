@@ -12,6 +12,8 @@ app.use(express.static('public'))
 app.use('/css', express.static(__dirname + 'public/css'))
 app.use('/js', express.static(__dirname + 'public/js'))
 app.use('/img', express.static(__dirname + 'public/img'))
+app.use('/object', express.static(__dirname + 'public/object'))
+app.use('/pattern', express.static(__dirname + 'public/pattern'))
 
 app.use(express.json());
 

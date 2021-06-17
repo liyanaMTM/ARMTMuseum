@@ -10,6 +10,7 @@
   "author": "liyana linggat",
   "license": "ISC",
   "dependencies": {
+    "aframe": "^1.2.0",
     "aframe-extras": "^6.1.1",
     "express": "^4.17.1"
   },

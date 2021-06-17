@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 
-        <script src="arjs/aframe/build/aframe.min.js"></script>
-        <script src="arjs/arjs/build/aframe-ar.js"></script>
-        <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
-    </head>
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+    <script src="arjs/aframe/build/aframe.min.js"></script>
+    <script src="arjs/arjs/build/aframe-ar.js"></script>
+    <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+    <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+</head>
     
     <body style='margin : 0px; overflow: hidden;'>
 
@@ -23,9 +26,17 @@
         <a-marker-camera preset='custom' url='public/pattern/pattern-Kitil.patt'>
 
             <!-- to tagged the model -->
-            <a-entity
+            <!--<a-entity
                 gltf-model="https://raw.githubusercontent.com/liyanaMTM/ARMTMuseum/main/public/object/Kitil.gltf"
+            </a-entity>-->
+
+            <a-entity
+                  position="0 0 0"
+                  scale="1 1 1"
+                  gltf-model-next="src: url(./public/object/Kitil.gltf);"
+                  animation-mixer>
             </a-entity>
+
 
         </a-marker-camera>
 

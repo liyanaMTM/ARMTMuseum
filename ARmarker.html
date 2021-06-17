@@ -13,37 +13,37 @@
     
     <body style='margin : 0px; overflow: hidden;'>
 
-    <a-scene embedded arjs>
-        
-        <!-- to put url object 
-        <a-assets>
+        <a-scene embedded arjs>
 
-            <a-asset-item id="kitil" src="https://raw.githubusercontent.com/liyanaMTM/ARMTMuseum/main/public/object/Kitil.gltf"></a-asset-item>
+            <!-- to put url object
+    <a-assets>
 
-        </a-assets> -->
+        <a-asset-item id="kitil" src="https://raw.githubusercontent.com/liyanaMTM/ARMTMuseum/main/public/object/Kitil.gltf"></a-asset-item>
 
-        <!-- to put url marker -->
-        <a-marker-camera preset='custom' url='public/pattern/pattern-Kitil.patt'>
-
-            <!-- to tagged the model -->
-            <!--<a-entity
-                gltf-model="https://raw.githubusercontent.com/liyanaMTM/ARMTMuseum/main/public/object/Kitil.gltf"
-            </a-entity>-->
-
-            <a-entity
-                  position="0 0 0"
-                  scale="1 1 1"
-                  gltf-model-next="src: url(./public/object/Kitil.gltf);"
-                  animation-mixer>
-            </a-entity>
+    </a-assets> -->
+            <!-- to put url marker -->
+            <!--<a-marker-camera preset='custom' url='public/pattern/pattern-Kitil.patt'>-->
+            <a-marker-camera preset='pattern' url='public/pattern/pattern-Kitil.patt'>
 
 
-        </a-marker-camera>
+                <!-- to tagged the model -->
+                <!--<a-entity
+            gltf-model="https://raw.githubusercontent.com/liyanaMTM/ARMTMuseum/main/public/object/Kitil.gltf"
+        </a-entity>-->
 
-        <!-- camera -->
-        <a-entity camera></a-entity>
+                <a-entity position="0 0 0"
+                          scale="1 1 1"
+                          gltf-model-next="src: url(./public/object/Kitil.gltf);"
+                          animation-mixer>
+                </a-entity>
 
-    </a-scene>
+
+            </a-marker-camera>
+
+            <!-- camera -->
+            <a-entity camera></a-entity>
+
+        </a-scene>
 
     </body>
     

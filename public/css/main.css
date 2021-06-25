@@ -1,14 +1,4 @@
 
-  .pics {
-    width: 250px;
-    margin: 30px;
-    float: right;
-  }
-
-  .col-md-12{
-    border: solid 1px #bebebe;
-    box-shadow: 1px 2px 15px #bebebe;
-  }
  
   #service-features {
     display: flex;
@@ -85,16 +75,7 @@
   }
   
 
-  /* ========================
-  Google Map
-  ======================== */
-  #map {
-    width: 90vh;
-    height: 75vh;
-    margin: auto;
-    background-color: rgba(216,216,216,1);
-    padding: 1.2em;
-  }
+
   
   /* ========================
   Raddy
@@ -161,7 +142,7 @@ Global
 
 body {
   font-family: "Noto Sans";
-  background-color: #bebebe;
+  background-image: url(/public/img/MuseumB.jpg);
   font-size: 18px;
   font-weight: 300;
   line-height: 1;
@@ -192,6 +173,7 @@ Containers
 
 .container-fluid {
   padding: 0 1em;
+  
 }
 
 .container {
@@ -215,7 +197,10 @@ Navigation
 }
 
 nav {
-  background-color: #ffd000;
+  background-image: url(/public/img/AR5.jpg);
+  background-repeat:repeat;
+  background-size: 120px 120px;
+  background-position: center;
   box-shadow: 0 2px 2px rgba(0,0,0,.45);
   position: relative;
   top: 0;
@@ -321,13 +306,13 @@ html {
 }
 
 #red-text {
-    color: #ff5a6e;
+    color: #a70022;
 }
 
 #title-text-separator {
   width: 5%;
   margin-top: 1%;
-  border: solid 1px #ff5a6e;
+  border: solid 1px #a70022;
 }
 
 .responsive-menu-link {
@@ -397,37 +382,9 @@ html {
   text-decoration: none;
 }
 
-/* ----- Main Content CSS -----
-
-Tags included:
-
-1. features-container - the main container wrapping the "features" elements
-
-2. features-description - container wrapping the title and the description
-
-3. features-title - the main title of the Features
-
-4. features-separator - the line that separates the title from the Description
-
-5. features-text - the main describing the features and services
-
-6. service-features - container wrapping all 4 services
-
-7. feature - the common id applied to the container of all the 4 services
-
-8. feature img - the styling of each image belonging to each feature
-
-9. feature-title - the common id applied to the title of each feature
-
-10. feature p - the styling of each paragraph belonging to each feature
-
-11. feature-button - the common id applied to the button of each feature
-
-12. feature-button:hover - the ":hover" styling of each button
-
-*/
 #features-container{
-  box-shadow: 2px 2px 15px #bebebe;
+  background-color: #feffed;
+  box-shadow: 2px 2px 15px #DFC08F;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -436,8 +393,7 @@ Tags included:
 #service-features {
   display: flex;
   flex-direction: row;
-  /* Change flow-direction to "column" in the responsive design for the features to stack
-  one on top of another. */
+
   justify-content: space-around;
   margin-top: 2%;
   padding-bottom: 3%;
@@ -487,24 +443,24 @@ Tags included:
 }
 
 #feature p {
-  width: 70%;
+  width: 100%;
   margin-top: 5%;
 }
 
 #feature-button {
   border: none;
   margin-top: 30%;
-  width: 12vh;
-  height: 5vh;
+  width: 100px;
+  height: 30px;
   border-radius: 15px;
-  background-color: #ff5a6e;
-  color: white;
+  background-color: #a70022;
+  color: #feffed;
   font-size: 16px;
   margin-bottom: 20%;
 }
 
 #feature-button:hover {
-  background-color: #ff7b8b;
+  background-color: #cb0034;
   cursor: pointer;
 }
 
@@ -742,58 +698,6 @@ footer p {
       background-color: inherit;
       padding: 2%;
     }
-
-
-  /* Hero CSS */
-
-  #hero-header {
-    width: auto;
-    height: 120vh;
-
-    /* hero-header flexbox */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
-    /* Texy style */
-    text-align: center;
-    color: white;
-
-    /* Background image */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(https://i.ibb.co/VTdML0x/accessories-apple-business-1038628.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-
-  #hero-title {
-    font-size: 3.5em;
-  }
-
-  #hero-text {
-    font-size: 1.3em;
-    margin-top: 2%;
-  }
-
-  #hero-button {
-    border: solid 2px white;
-    background-color: inherit;
-    color: white;
-    margin-top: 6%;
-    width: 25%;
-    height: 55px;
-    font-size: 15px;
-    border-radius: 10px;
-  }
-
-  #hero-button:hover {
-    cursor: pointer;
-  }
-
-
-
   /* Service Features CSS */
 
   #service-features {
@@ -834,169 +738,15 @@ footer p {
     font-size: 16px;
     margin-bottom: 20%;
   }
-
-
-
-
-  /* Presentation Section CSS */
-
-  #presentation-container {
-    margin-top: 5%;
-    width: 80%;
-    margin: auto;
-  }
-
-  #presentation-title-description {
-    width: 90%;
-  }
-
-  #section-buttons {
-    margin-top: 5%;
-  }
-
-  #section-content-container {
-    margin: auto;
-    width: 90%;
-  }
-
-  #section-content-container {
-    margin-top: 7%;
-  }
-
-  .product-button {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 40%;
-    padding: 15px;
-  }
-
-  .product-content {
-    display: flex;
-    flex-flow: column;
-    padding: 2%;
-  }
-
-  #content-image {
-    width: 100%;
-    height: 100%;
-  }
-
-  #content-image-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-  #content-title-text {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    margin: auto;
-    margin-top: 5%;
-  }
-
-  #content-title-text h1 {
-    margin: auto;
-  }
-
-  #centered-product-description {
-    text-align: center;
-  }
-
-  #content-title-text p {
-    margin-top: 5%;
-  }
-
-  #product-feature-image {
-    justify-content: center;
-    align-items: center;
-    width: 8%;
-  }
-
-  .product-features-list {
-    margin-top: 15%;
-  }
-
-  #first-feature-list {
-    margin-top: 10%;
-  }
-
-  #content-button {
-    margin: auto;
-    margin-top: 10%;
-    width: 35%;
-  }
-
-
-
-
-  /* -- Media Section CSS -- */
-
-  #main-media-container {
-    margin-top: 5%;
-  }
-
-  #media-title-description {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 90%;
-    margin-top: 8%;
-  }
-
-  #media-video-text-container {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    padding: 2% 1% 2% 1%;
-    margin-top: 10%;
-    text-align: center;
-  }
-
-  #media-text {
-    width: 100%;
-  }
-
-  #media-text h2 {
-    margin: auto;
-  }
-
-  #media-text p {
-    margin-top: 6%;
-  }
-
-  #text-video-sperator {
-    height: 1%;
-    width: 80%;
-    margin-top: 10%;
-    margin-bottom: 9%;
-  }
-
-  #media-button {
-    width: 35%;
-    margin: auto;
-    margin-top: 7%;
-  }
-
-  #media-video {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    align-content: center;
-  }
-
-  #iframe-video {
-    width: 80vh;
-    height: 50vh;
-    margin-bottom: 9%;
-  }
-
 }
+
+  /* ========================
+  Google Map
+  ======================== */
+  #map {
+    width: 10vh;
+    height: 75vh;
+    margin: auto;
+    background-color: rgba(216,216,216,1);
+    padding: 1.2em;
+  }

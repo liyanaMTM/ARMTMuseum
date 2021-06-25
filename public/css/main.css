@@ -142,7 +142,7 @@ Global
 
 body {
   font-family: "Noto Sans";
-  background-image: url(../public/img/MuseumB.jpg);
+  background-image: url(./public/img/MuseumB.jpg);
   font-size: 18px;
   font-weight: 300;
   line-height: 1;
@@ -197,7 +197,7 @@ Navigation
 }
 
 nav {
-  background-image: url(../public/img/AR5.jpg);
+  background-image: url(./public/img/AR5.jpg);
   background-repeat:repeat;
   background-size: 120px 120px;
   background-position: center;
